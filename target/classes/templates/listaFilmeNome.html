@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilo.css">
+        <title>Lista de Filmes</title>
+    </head>
+    <body>
+        <div>
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/filmes">Filmes</a></li>
+                <li><a href="/cadastro">Cadastrar</a></li>
+                <li><a href="/busca">Buscar por nome</a></li>
+            </ul>
+        </div>
+
+        <div class="banner">
+            <h1>Masterflix: Olá Mundo!</h1>
+            <marquee behavior="" direction="">Bem vindo ao MasterFlix</marquee>
+        </div>
+
+        <div class="formulario">
+            <div>
+                <p><strong>Nome do filme: </strong><span th:text="${filme.nome}"></span></p>
+                <p><strong>Sinópse: </strong><span th:text="${filme.sinopse}"></span></p>
+                <img th:src="${filme.imagem}" width="20%">
+                <p><strong>Gênero: </strong><span th:text="${filme.genero}"></span></p>
+                <p><strong>Duração: </strong><span th:text="${filme.duracao}"></span></p>
+                <p><strong>Data de lançamento: </strong><span th:text="${filme.data_lancamento}"></span></p>
+
+            </div>
+        </div>
+
+    </body>
+</html>

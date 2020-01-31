@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilo.css">
+        <title>Cadastro</title>
+    </head>
+    <body>
+        <div>
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/filmes">Filmes</a></li>
+                <li><a href="/cadastro">Cadastrar</a></li>
+                <li><a href="/busca">Buscar por nome</a></li>
+            </ul>
+        </div>
+
+        <div class="banner">
+            <h1>Masterflix: Cadastre seu filme!</h1>
+        </div>
+
+        <form action="/cadastrar" method="post" class="formulario">
+
+            <div class="campo">
+                <label>Nome do filme: </label>
+                <input type="text" name="nome">
+            </div>
+
+            <div class="campo">
+                <label>Sinópse: </label>
+                <input type="text" name="sinopse">
+            </div>
+
+            <div class="campo">
+                <label>URL da imagem: </label>
+                <input type="text" name="imagem">
+            </div>
+
+            <div class="campo">
+                <label>Gênero: </label>
+                <input type="text" name="genero">
+            </div>
+
+            <div class="campo">
+                <label>Duração: </label>
+                <input type="text" name="duracao">
+            </div>
+
+            <div class="campo">
+                <label>Data de lançamento: </label>
+                <input type="text" name="data_lancamento">
+            </div>
+
+            <button>Cadastrar</button>
+        </form>
+
+    </body>
+</html>
